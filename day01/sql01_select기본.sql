@@ -171,8 +171,8 @@ SELECT *
 
 SELECT department_id, department_name
  FROM departments
- WHERE department_id <= 50;
-
+ WHERE department_id <= 50
+ UNION -- ALL 써줘도 값은 똑같음
 SELECT employee_id, first_name || last_name AS "full_name"
  FROM employees
  WHERE employee_id BETWEEN 110 AND 150;
