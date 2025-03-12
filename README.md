@@ -41,7 +41,7 @@ Java개발자 과정 DAtabase 리포지토리
         - Connection > Select you DB > Oracle 선택
         <img src="./image/db001.png" width=650>
 - DBeaver 툴 설치
-    - http://debeaver.io/download/
+    - http://dbeaver.io/download/
 
 
 - DML, DDL, DCL
