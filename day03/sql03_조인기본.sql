@@ -56,3 +56,57 @@ SELECT e.employee_id, e.first_name || ' ' || e.LAST_name AS "full_name"
     INNER JOIN locations l
        ON l.location_id = d.location_id
        WHERE d.department_id = 60;
+
+-- 외부조인
+-- 보통 PK와 FK간의 일치하는 조건의 데이터를 찾는 것 - 내부조인
+-- PK와 FK간의 일치하지 않는 조건의 데이터도 같이 찾는 것 - 외부조인
+-- 테이블1 OUTER JOIN 테이블2
+-- 테이블1을 기준으로 외부조인 LEFT OUTER JOIN
+-- 테이블2를 기준으로 외부조인 RIGHT OTHER JOIN
+
+SELECT *
+FROM employees e
+INNER JOIN departments d
+ON e.department_id = d.department_id
+WHERE e.department_id IS NULL;
+
+
+-- ANSI 표준문법
+-- employees테이블에는 있는데 departments테이블에는 없는 데이터를 같이 출력
+SELECT *
+	FROM employees e
+	left OUTER JOIN departments d
+	ON e.department_id = d.department_id
+	WHERE e.department_id IS NULL;
+
+--departments테이블에는 있는데 employees테이블에는 없는 데이터를 같이 출력
+SELECT *
+	FROM employees e
+	RIGHT outer JOIN departments d
+	ON e.department_id = d.department_id;
+
+-- Oracle 문법
+-- (+)만족하지 않는 조건도 더 나오게 한다는 뜻
+-- LEFT OUTER JOIN
+SELECT *
+	FROM employees e, departments d
+	WHERE e.department_id = d.department_id(+);
+
+--RIGHT OUTER JOIN
+SELECT *
+	FROM employees e, departments d
+	WHERE e.department_id(+) = d.department_id;
+
+-- INNER JOIN은 INNER를 생략가능
+-- OUTER JOIN에만 LEFT와 RIGHT가 존재하므로 OUTER 생략 가능
+
+-- 셀프조인 : 자기자신을 두번 사용하는 조인
+SELECT e1.employee_id
+	   ,e1.first_name || ' ' || e1.last_name AS "full_name"
+	   , e1. job_id
+	   , e1.manager_id
+	   , e2.first_name || ' ' || e2.last_name AS "full_mng_name"
+	   , e2.job_id
+FROM employees e1, employees e2
+WHERE e1.employee_id = e2.manager_id(+)
+ORDER BY e1.manager_id;
