@@ -2,11 +2,11 @@
  * SQL - DML - select 학습
  */
 
--- 01. HR.emplyees 테이블의 모든 데이터 조회하세요.(107건)
+-- 01. HR.employees 테이블의 모든 데이터 조회하세요.(107건)
 SELECT  * -- asterik -> all로 발음. 모든컬럼을 다 보여라.
   FROM employees;
 
--- 02. HR.emplyees 중 emplyee_id, first_name, last_name, hire_date를 출력하라(107행)
+-- 02. HR.employees 중 emplyee_id, first_name, last_name, hire_date를 출력하라(107행)
 SELECT employee_id, first_name, last_name, email, hire_date
 	FROM employees;
 
