@@ -57,3 +57,4 @@ SELECT * FROM MEMBER;
 -- HR에게 DBA역할 권한 해제
 REVOKE DBA FROM hr;
 
+COMMIT;
