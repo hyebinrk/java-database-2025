@@ -333,3 +333,9 @@ Java개발자 과정 DAtabase 리포지토리
             PL/SQL쿼리
         END;        
         ```
+
+        ## 7일차
+        - Oracle연동 Python GUI 프로그램 개발
+            - [오라클연동](./toyproject/README.md)
+        
+        ## 8일차
