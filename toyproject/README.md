@@ -93,6 +93,15 @@ Python GUI - Oracle연동 프로그램
                 - 설치
             - 콘솔에서 ` > pip install cx_Oracle `
             - 콘솔 오라클 연동 : [python]()
-
+                - DPI-1047오류 발생
+                - 64-bit Oracle Client Library가 OS에 설치되지 않았기 때문에 발생하는 현상
+                - 아래 사이트에서 버전에 맞는 Oracle Client를 다운로드
+                - https://www.oracle.com/kr/database/technologies/instant-client/winx64-64-downloads.html
+                - 11g 다운로드
+                - 압축해제(C:\DEV\Tool\instantclient_11_2), 시스템정보 Path 등록
+                - 재부팅!
+            - 콘솔 테스트 결과
+                <img src="../image/db008.png" width="800">
+            
     - QtDesigner로 화면 구성
     - PyQt로 Oracle 연동 CRUD 구현
