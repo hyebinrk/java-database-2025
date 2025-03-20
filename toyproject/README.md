@@ -37,7 +37,7 @@ Python GUI - Oracle연동 프로그램
     4. 시그널(이벤트) 처리방법
     5. QtDesigner로 화면디자인, PyQt와 연동
 
-        <img scr="../image/db006.png" width="600">
+        <img src="../image/db006.png" width="600">
 
 
     #### Oracle연동 GUI개발 시작
@@ -51,7 +51,6 @@ Python GUI - Oracle연동 프로그램
         GRANT CONNECT, resource TO madang;
 
         -- madang으로 사용 스키마변경
-
         -- 테이블 Student 생성
         CREATE TABLE Students (
             std_id		NUMBER			PRIMARY KEY,
@@ -64,18 +63,11 @@ Python GUI - Oracle연동 프로그램
         CREATE SEQUENCE SEQ_STUDENT
             INCREMENT BY 1		-- 숫자를 1씩 증가
             START WITH 1;		-- 1부터 숫자가 증가됨
-            
-        COMMIT;
-
-        -- 사용자 madang으로 변경
-
-        ```
+         ```
 
     - Student 테이블 생성, 더미데이터 추가
-
         ```sql
         -- madang 로그인
-
         -- 조회
         SELECT * FROM Students;
 
@@ -91,7 +83,16 @@ Python GUI - Oracle연동 프로그램
         - 오라클 모듈
             - oracledb - Oracle 최신버전에 매칭
             - **cx_Oracle** - 구버전까지 잘 됨
+            
+            - [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ko/visual-cpp-build-tools/)필요
+                - Visual Stuido Installer 실행
+                - 개별 구성요소에서 아래 요소 선택
+                    - [X] MSVC v1XX - VS20XX C++ x64/86 빌드도구
+                    - [X] C++ CMAKE Tools for Window
+                    - [X] Windows 10 SDK(10.0.xxxxx)
+                - 설치
             - 콘솔에서 ` > pip install cx_Oracle `
-            - Microsoft C++ Build Tools 필요
+            - 콘솔 오라클 연동 : [python]()
+
     - QtDesigner로 화면 구성
     - PyQt로 Oracle 연동 CRUD 구현
