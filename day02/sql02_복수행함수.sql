@@ -42,7 +42,7 @@ SELECT department_id
 	, sum(salary) AS 부서별급여총액
 	FROM employees
 	GROUP BY department_id
-	ORDER BY avg(salary) DESC;
+	ORDER BY avg(salary) DESC; 
 
 -- employees에서 부서와 직군별 급여총액과 직원수를 출력
 SELECT department_id, job_id, sum(salary) AS 부서직군별급여총액
