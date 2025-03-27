@@ -100,7 +100,7 @@ class CustomCalendar(QtWidgets.QCalendarWidget):
 class AttendanceApp(QtWidgets.QMainWindow):
     def __init__(self, attendance_data):
         super().__init__()
-        uic.loadUi("attendance.ui", self)  # Qt Designer UI 파일 불러오기
+        uic.loadUi("./프로젝트/출석관리,통계-작성중.ui", self)  # Qt Designer UI 파일 불러오기
 
         # Qt Designer에서 만든 calendarWidget을 CustomCalendar로 교체
         self.calendar = CustomCalendar(attendance_data, self)

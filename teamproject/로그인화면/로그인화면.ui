@@ -53,7 +53,7 @@
           </property>
           <layout class="QHBoxLayout" name="buttonArea">
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="btnTeacherSelect">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
                <horstretch>0</horstretch>
@@ -65,12 +65,12 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/다운로드.png</normaloff>../image/다운로드.png</iconset>
+               <normaloff>../../../Users/Admin/AppData/Local/Temp/image/다운로드.png</normaloff>../../../Users/Admin/AppData/Local/Temp/image/다운로드.png</iconset>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton">
+            <widget class="QPushButton" name="btnStudentSelect">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
                <horstretch>0</horstretch>
@@ -82,7 +82,7 @@
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../image/다운로드 (1).png</normaloff>../image/다운로드 (1).png</iconset>
+               <normaloff>../../../Users/Admin/AppData/Local/Temp/image/다운로드 (1).png</normaloff>../../../Users/Admin/AppData/Local/Temp/image/다운로드 (1).png</iconset>
              </property>
             </widget>
            </item>

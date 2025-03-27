@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>D2Coding</family>
+    <pointsize>16</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ＯＯ고등학교 출결관리앱</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>18</y>
+      <width>491</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>ＱＲ 로그인</string>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>70</y>
+            <width>221</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">
+background-color: rgb(170, 255, 255);
+font: 9pt &quot;Agency FB&quot;;</string>
+          </property>
+          <property name="text">
+           <string>ＱＲ</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
