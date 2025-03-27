@@ -10,34 +10,35 @@ port = 1521
 username = 'attendance'
 password = '12345'
 
-# def loadSdata():
-#     conn = oci.connect(f'{username}/{password}@{host}:{port}/{sid}')
-#     cursor = conn.cursor()
-
-#     query = '''SELECT S_NO, S_ID, S_PW, S_NAME, S_BIRTH, S_TEL, S_ADDR, CLASS_NO 
-#             FROM ATTENDANCE.STUDENT'''
-#     cursor.execute(query)
-
-#     lst_student = [item for item in cursor]  
-
-#     cursor.close()
-#     conn.close()
-
-#     return lst_student
-
 def loadSdata():
     conn = oci.connect(f'{username}/{password}@{host}:{port}/{sid}')
     cursor = conn.cursor()
 
-    query = '''SELECT T_NO, T_ID, T_PW, T_NAME, T_TEL, CLASS_NO
-                FROM ATTENDANCE.TEACHER'''
+    query = '''SELECT S_NO, S_ID, S_PW, S_NAME, S_BIRTH, S_TEL, S_ADDR, CLASS_NO 
+            FROM ATTENDANCE.STUDENT'''
+
     cursor.execute(query)
-    lst_teacher = [item for item in cursor]  
+
+    lst_student = [item for item in cursor]  
 
     cursor.close()
     conn.close()
 
-    return lst_teacher
+    return lst_student
+
+# def loadSdata():
+#     conn = oci.connect(f'{username}/{password}@{host}:{port}/{sid}')
+#     cursor = conn.cursor()
+
+#     query = '''SELECT T_NO, T_ID, T_PW, T_NAME, T_TEL, CLASS_NO
+#                 FROM ATTENDANCE.TEACHER'''
+#     cursor.execute(query)
+#     lst_teacher = [item for item in cursor]  
+
+#     cursor.close()
+#     conn.close()
+
+    # return lst_teacher
 
 
 
