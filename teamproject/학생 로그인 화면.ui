@@ -38,7 +38,7 @@
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="title">
-        <string>학번 / 회원가입</string>
+        <string>학생 로그인</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignHCenter|Qt::AlignTop</set>
@@ -76,7 +76,10 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_2">
           <item>
-           <widget class="QLineEdit" name="lineEdit">
+           <widget class="QLineEdit" name="input_S_ID">
+            <property name="inputMask">
+             <string/>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -86,7 +89,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2">
+           <widget class="QLineEdit" name="input_S_PW">
             <property name="placeholderText">
              <string>비밀번호</string>
             </property>
@@ -94,7 +97,7 @@
           </item>
          </layout>
         </widget>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btn_login">
          <property name="geometry">
           <rect>
            <x>530</x>
