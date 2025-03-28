@@ -1,7 +1,13 @@
 -- attendance 로그인
 
 -- 조회
+SELECT * FROM "ATD";
 SELECT * FROM "STUDENT";
+SELECT * FROM "CLASS";
+
+INSERT INTO "CLASS"("CLASS_NO","CLASS_NAME") VALUES (CLASS_CLASS_NO_SEQ.nextval,03);
+INSERT INTO "ATD"("ATD_NO", "S_NO", "T_NO") VALUES (ATD_NO_SEQ.nextval, STUDENT_S_NO_SEQ.nextval, TEACHER_T_NO_SEQ.nextval);
+
 
 -- 더미데이터 삽입
 INSERT INTO "STUDENT" ("S_NO", "S_ID", "S_PW", "S_NAME", "S_BIRTH", "S_TEL", "S_ADDR", "CLASS_NO") 

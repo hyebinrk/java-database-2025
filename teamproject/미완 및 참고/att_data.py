@@ -15,7 +15,11 @@ def loadSdata():
     cursor = conn.cursor()
 
     query = '''SELECT S_NO, S_ID, S_PW, S_NAME, S_BIRTH, S_TEL, S_ADDR, CLASS_NO 
-            FROM ATTENDANCE.STUDENT'''
+                FROM ATTENDANCE.STUDENT
+                WHERE S_ID = '1'
+                '''
+
+
 
     cursor.execute(query)
 
@@ -38,7 +42,7 @@ def loadSdata():
 #     cursor.close()
 #     conn.close()
 
-    # return lst_teacher
+#     return lst_teacher
 
 
 

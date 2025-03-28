@@ -24,7 +24,7 @@ class SelectLogin(QMainWindow):
         self.initUI()
     
     def initUI(self):
-        uic.loadUi('./teamproject/출결관리앱/로그인화면.ui', self)
+        uic.loadUi('./teamproject/로그인화면.ui', self)
         self.setWindowTitle('출결체크')
         # self.setWindowIcon(QIcon('./image/kitty.png'))
         
@@ -52,7 +52,7 @@ class TeacherloginWindow(QMainWindow):
     # UI 초기화 함수
     def initUI(self):
         # UI 파일 로드
-        uic.loadUi('./teamproject/출결관리앱/t_login.ui', self)
+        uic.loadUi('./teamproject/t_login.ui', self)
         self.setWindowTitle('교사용 로그인')  # 윈도우 제목 설정
 
         # 로그인 버튼 클릭 시그널 연결
@@ -125,7 +125,7 @@ class StudentloginWindow(QMainWindow):
     # UI 초기화 함수
     def initUI(self):
         # UI 파일 로드
-        uic.loadUi('./teamproject/출결관리앱/학생 로그인 화면.ui', self)
+        uic.loadUi('./teamproject/학생 로그인 화면.ui', self)
         self.setWindowTitle('학생용 로그인')  # 윈도우 제목 설정
         self.setWindowIcon(QIcon('./image/app01.png'))
 
@@ -192,6 +192,20 @@ class StudentloginWindow(QMainWindow):
             conn.close()
 
         return isSucceed  # 로그인 성공 여부 반환
+
+    def btnLogClick(self):
+        self.studentlogin_window = StudentloginWindow()
+        self.studentlogin_window.show()
+        self.close()
+
+class StudentAttcheckWindow(QMainWindow):
+    def __init__(self):
+        super(StudentAttcheckWindow, self).__init__()
+        self.initUI()
+
+    def initUI(self):
+        uic.loadUi('./teamproject/로그인 방식.ui', self)
+        self.setWindowTitle('로그인 방식')
 
 
 # (교사용) 출석번호 출결체크

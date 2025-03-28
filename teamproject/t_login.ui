@@ -80,14 +80,14 @@
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
-             <widget class="QLineEdit" name="lineEdit">
+             <widget class="QLineEdit" name="input_T_ID">
               <property name="placeholderText">
                <string>교사번호</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="lineEdit_2">
+             <widget class="QLineEdit" name="input_T_PW">
               <property name="placeholderText">
                <string>비밀번호</string>
               </property>
@@ -95,7 +95,7 @@
             </item>
            </layout>
           </widget>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="btn_login">
            <property name="geometry">
             <rect>
              <x>500</x>

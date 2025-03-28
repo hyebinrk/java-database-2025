@@ -23,9 +23,13 @@ class MainWindow(QMainWindow):
     def initUI(self):
         uic.loadUi('./teamproject/로그인화면.ui', self)
         self.setWindowTitle('출결체크')
-        # self.setWindowIcon(QIcon('./image/kitty.png'))
+        self.setWindowIcon(QIcon('./teamproject/image/kitty.png'))
+
+        # 버튼 아이콘 추가
+        self.btnTeacherSelect.setIcon(QIcon('./teamproject/image/teacher.png'))
+        self.btnStudentSelect.setIcon(QIcon('./teamproject/image/student.png'))
         
-    # 버튼 이벤트 추가
+        # 버튼 이벤트 추가
         self.btnTeacherSelect.clicked.connect(self.btnTeacherClick)
         self.btnStudentSelect.clicked.connect(self.btnStudentClick)
         
@@ -47,8 +51,8 @@ class TeacherloginWindow(QMainWindow):
         # self.loadData()
     
     def initUI(self):
-        uic.loadUi('./teamproject/학생 로그인 화면.ui', self)
-        self.setWindowTitle('학생 로그인')
+        uic.loadUi('./teamproject/t_login.ui', self)
+        self.setWindowTitle('교사 로그인')
 
 class StudentloginWindow(QMainWindow):
     def __init__(self):

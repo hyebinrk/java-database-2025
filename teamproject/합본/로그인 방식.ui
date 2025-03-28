@@ -105,7 +105,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_3"/>
           </widget>
-          <widget class="QLabel" name="LabelAtdcheck">
+          <widget class="QLabel" name="label_2">
            <property name="geometry">
             <rect>
              <x>170</x>
@@ -164,7 +164,7 @@
           <property name="title">
            <string/>
           </property>
-          <widget class="QPushButton" name="btn_eal">
+          <widget class="QPushButton" name="pushButton_3">
            <property name="geometry">
             <rect>
              <x>70</x>
@@ -184,7 +184,7 @@
             <string>조퇴</string>
            </property>
           </widget>
-          <widget class="QPushButton" name="btn_out">
+          <widget class="QPushButton" name="pushButton_4">
            <property name="geometry">
             <rect>
              <x>270</x>
@@ -204,7 +204,7 @@
             <string>외출</string>
            </property>
           </widget>
-          <widget class="QPushButton" name="btn_cob">
+          <widget class="QPushButton" name="pushButton_5">
            <property name="geometry">
             <rect>
              <x>460</x>
@@ -258,7 +258,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
-             <widget class="QLabel" name="LabelMypage">
+             <widget class="QLabel" name="label_3">
               <property name="text">
                <string/>
               </property>
@@ -271,7 +271,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="LabelAtdMgmt">
+             <widget class="QLabel" name="label_5">
               <property name="text">
                <string/>
               </property>
