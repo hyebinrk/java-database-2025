@@ -8,7 +8,8 @@ from PyQt5 import QtGui, QtWidgets,uic
 
 ## DB연결 설정
 sid = 'XE'
-host = 'localhost'
+# host = 'localhost'
+host = '210.119.14.71'
 port = 1521
 username = 'attendance'
 password = '12345'
@@ -21,17 +22,17 @@ class MainWindow(QMainWindow):
         self.initUI()
     
     def initUI(self):
-        uic.loadUi('./sel_login.ui', self)
+        uic.loadUi('./teamproject/sel_login.ui', self)
         self.setWindowTitle('출결체크')
         self.setWindowIcon(QIcon('./image/kitty.png'))
 
         # 버튼 아이콘 추가
-        self.btnTeacherSelect.setIcon(QIcon('./image/teacher.png'))
-        self.btnStudentSelect.setIcon(QIcon('./image/student.png'))
+        self.btnTeacherSelect.setIcon(QIcon('./teamproject/image/teacher.png'))
+        self.btnStudentSelect.setIcon(QIcon('./teamproject/image/student.png'))
         
         # 버튼 이벤트 추가
         self.btnTeacherSelect.clicked.connect(self.TLoginWindow)
-        self.btnStudentSelect.clicked.connect(self.SLoginWindow)
+        self.btnStudentSelect.clicked.connect(self.SLoginWindow) 
 
     
     def TLoginWindow(self):

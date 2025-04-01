@@ -6,6 +6,7 @@ import random
 
 sid = 'XE'
 host = '210.119.14.71'
+# host = 'localhost'
 port = 1521
 username = 'attendance'
 password = '12345'
